@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Aplikacja webowa</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="plugins/node-waves/waves.css" rel="stylesheet" />
+    <link href="plugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/themes/all-themes.css" rel="stylesheet" />
+</head>
+<body class="theme-red">
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Proszę czekać...</p>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="#">Aplikacja webowa obliczanie kalorii</a>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <aside id="leftsidebar" class="sidebar">
+            <div class="user-info">
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Panel klienta</div>
+                    <div class="btn-group user-helper-dropdown">
+                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="javascript:void(0);"><i class="material-icons">input</i>Wyloguj</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">Menu nawigacyjne</li>
+                    <li>
+                        <a href="blank.html">
+                            <i class="material-icons">home</i>
+                            <span>Menu główne</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calculateBMI.html">
+                            <i class="material-icons">add</i>
+                            <span>Oblicz BMI</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="addCalories.html">
+                            <i class="material-icons">kitchen</i>
+                            <span>Dodaj spożyte kalorie</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="showChart.html">
+                            <i class="material-icons">show_chart</i>
+                            <span>Wykres kalorii</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="editPassword.html">
+                            <i class="material-icons">edit</i>
+                            <span>Zmień hasło</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="legal">
+                <div class="copyright">
+                    &copy; 2018-2019 <a href="javascript:void(0);">Krystian Kosior</a>
+                </div>
+                <div class="version">
+                    <b>Wersja: </b> 1.0.5
+                </div>
+            </div>
+        </aside>
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+               
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Wykers zależności czasu do spożytych kalorii</h2>
+                        </div>
+                        <div class="body">
+                            <canvas id="line_chart" height="100"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <script src="plugins/node-waves/waves.js"></script>
+    <script src="plugins/chartjs/Chart.bundle.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/pages/charts/chartjs.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+
+</html>
